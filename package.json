@@ -8,7 +8,13 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
+    "prettier":
+      "prettier --single-quote --trailing-comma es5 --write \"app/**/*.ts\"",
+    "ptt": "prettier --single-quote --trailing-comma es5 --write ",
     "e2e": "ng e2e"
+  },
+  "precommit": {
+    "tasks": ["npm run prettier"]
   },
   "private": true,
   "dependencies": {
@@ -23,6 +29,8 @@
     "@angular/router": "^5.0.0",
     "bootstrap": "^4.0.0-beta.3",
     "core-js": "^2.4.1",
+    "lodash": "^4.17.5",
+    "lodash-decorators": "^4.5.0",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
