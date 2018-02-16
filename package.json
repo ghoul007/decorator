@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "prettier":
-      "prettier --single-quote --trailing-comma es5 --write \"app/**/*.ts\"",
+      "prettier --single-quote --trailing-comma es5 --write \"src/app/**/*.ts\"",
     "ptt": "prettier --single-quote --trailing-comma es5 --write ",
     "e2e": "ng e2e",
     "precommit": "lint-staged"
