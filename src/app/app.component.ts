@@ -14,7 +14,7 @@ export class AppComponent {
   c: number;
   constructor() {
     console.log('test', this['name']());
-    console.log('==>', this.getResult());
+                 console.log('==>', this.getResult());
   }
 
   ngOnInit() {
@@ -32,6 +32,6 @@ export class AppComponent {
   @throttle()
   @debounce(500)
   scroll() {
-                console.log('scroll');
+    console.log('scroll');
   }
 }
