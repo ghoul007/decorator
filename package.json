@@ -8,15 +8,13 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "prettier":
-      "prettier --single-quote --trailing-comma es5 --write \"app/**/*.ts\"",
+    "prettier": "prettier --single-quote --trailing-comma es5 --write \"app/**/*.ts\"",
     "ptt": "prettier --single-quote --trailing-comma es5 --write ",
     "e2e": "ng e2e"
   },
-  "precommit": {
-    "tasks": ["npm run prettier"]
-  },
-  "private": true,
+  "pre-commit": [
+    "pretier"
+  ],
   "dependencies": {
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
