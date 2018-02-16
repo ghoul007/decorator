@@ -13,8 +13,10 @@ export class AppComponent {
   title = 'app';
   c: number;
   constructor() {
-    console.log('test', this['name']());
-                 console.log('==>', this.getResult());
+
+
+          console.log('test', this['name']());
+    console.log('==>', this.getResult());
   }
 
   ngOnInit() {
