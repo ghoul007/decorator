@@ -26,7 +26,7 @@ export class AppComponent {
     return 'hello ' + name;
   }
   @Partial('sayHello', 'ghoul')
-  getResult() {}
+      getResult() {}
 
   @HostListener('document:scroll')
   @throttle()
