@@ -26,12 +26,12 @@ export class AppComponent {
     return 'hello ' + name;
   }
   @Partial('sayHello', 'ghoul')
-      getResult() {}
+  getResult() {}
 
   @HostListener('document:scroll')
   @throttle()
   @debounce(500)
   scroll() {
-                    console.log('scroll');
+                console.log('scroll');
   }
 }
